@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Webinar - Virtual Flip Formula</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Campton:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Campton', sans-serif;
+        }
+        
+        :root {
+            --brand-green: #8dc63f;
+            --brand-dark-green: #099302;
+            --brand-navy: #35424d;
+            --light-green: #f0f8e8;
+        }
+        
+        .bg-brand-green { background-color: var(--brand-green); }
+        .bg-brand-dark-green { background-color: var(--brand-dark-green); }
+        .bg-brand-navy { background-color: var(--brand-navy); }
+        .bg-light-green { background-color: var(--light-green); }
+        .text-brand-green { color: var(--brand-green); }
+        .text-brand-dark-green { color: var(--brand-dark-green); }
+        .text-brand-navy { color: var(--brand-navy); }
+        
+        .card-shadow {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .bg-dark-grey {
+            background-color: #2d3748;
+        }
+        
+        .notification-dot {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            width: 12px;
+            height: 12px;
+            background-color: #ef4444;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+            }
+        }
+        
+        .countdown-timer {
+            background: linear-gradient(135deg, var(--brand-green), var(--brand-dark-green));
+        }
+    </style>
+</head>
+<body class="bg-dark-grey text-white">
+    <!-- Navigation -->
+    <nav class="bg-brand-navy py-4 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center">
+                        <img src="assets/logos/vff_logo.png" alt="Virtual Flip Formula" class="h-8">
+                    </a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="../index.html" class="text-white hover:text-brand-green transition-colors">
+                        Back to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="mb-8">
+                <span class="bg-red-500 text-white px-4 py-2 rounded-full text-sm font-semibold pulse-animation">
+                    LIVE WEBINAR
+                </span>
+            </div>
+            
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                <span class="text-brand-green">JOIN THE WEBINAR</span><br>
+                Close Your First Wholesale Deal
+            </h1>
+            
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Don't miss this exclusive live training where we'll reveal the exact process that's helped hundreds of beginners close their first wholesale check.
+            </p>
+            
+            <div class="countdown-timer rounded-xl p-6 mb-8">
+                <h3 class="text-2xl font-bold mb-4">Limited Spots Available</h3>
+                <div class="grid grid-cols-4 gap-4 text-center">
+                    <div>
+                        <div class="text-3xl font-bold">24</div>
+                        <div class="text-sm">Hours</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold">12</div>
+                        <div class="text-sm">Minutes</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold">45</div>
+                        <div class="text-sm">Seconds</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold">00</div>
+                        <div class="text-sm">Milliseconds</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl p-8 text-brand-navy mb-8">
+                <h2 class="text-2xl font-bold mb-4">What You'll Learn:</h2>
+                <div class="grid md:grid-cols-2 gap-4 text-left">
+                    <div class="flex items-start space-x-3">
+                        <i class="fas fa-check-circle text-brand-green text-xl mt-1"></i>
+                        <span>The exact process to find motivated sellers</span>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <i class="fas fa-check-circle text-brand-green text-xl mt-1"></i>
+                        <span>How to calculate accurate offer prices</span>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <i class="fas fa-check-circle text-brand-green text-xl mt-1"></i>
+                        <span>Building your cash buyer network</span>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                        <i class="fas fa-check-circle text-brand-green text-xl mt-1"></i>
+                        <span>Closing your first deal step-by-step</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="space-y-4">
+                <a href="#register" class="block bg-brand-green text-white px-12 py-6 rounded-xl text-2xl font-bold hover:bg-brand-dark-green transition-colors">
+                    REGISTER NOW - DON'T MISS OUT!
+                </a>
+                <p class="text-sm text-gray-400">
+                    ⚡ Only 47 spots remaining • Free registration • No credit card required
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-800">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Secure Your Spot Now</h2>
+                <p class="text-xl text-gray-300">
+                    Join hundreds of successful wholesalers who started with this exact training
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-xl p-8 text-brand-navy">
+                <h3 class="text-2xl font-bold mb-6 text-center">Webinar Registration</h3>
+                
+                <!-- WebinarJam Embed Code Placeholder -->
+                <div class="bg-gray-100 rounded-lg p-8 text-center">
+                    <i class="fas fa-video text-4xl text-brand-green mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Webinar Registration Form</h4>
+                    <p class="text-gray-600 mb-4">
+                        Your WebinarJam embed code will be placed here
+                    </p>
+                    <div class="bg-gray-200 rounded-lg p-4 text-sm text-gray-500">
+                        <!-- WebinarJam embed code goes here -->
+                        [WebinarJam Registration Form]
+                    </div>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <p class="text-sm text-gray-600">
+                        By registering, you'll also receive our free wholesale guide and exclusive access to our community.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">What Our Students Say</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <div class="text-brand-green text-4xl mb-4">★★★★★</div>
+                    <p class="text-gray-300 mb-4">"This webinar changed everything. I closed my first deal within 30 days!"</p>
+                    <p class="font-semibold">- Christian M.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <div class="text-brand-green text-4xl mb-4">★★★★★</div>
+                    <p class="text-gray-300 mb-4">"The step-by-step process was exactly what I needed to get started."</p>
+                    <p class="font-semibold">- Ramon S.</p>
+                </div>
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <div class="text-brand-green text-4xl mb-4">★★★★★</div>
+                    <p class="text-gray-300 mb-4">"From $0 to $45k in 30 days - this training works!"</p>
+                    <p class="font-semibold">- Zach T.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-brand-green">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6 text-white">
+                Time is Running Out!
+            </h2>
+            <p class="text-xl text-gray-200 mb-8">
+                Don't let this opportunity pass you by. Register now and take the first step toward your first wholesale check.
+            </p>
+            <a href="#register" class="bg-white text-brand-green px-12 py-6 rounded-xl text-2xl font-bold hover:bg-gray-100 transition-colors">
+                REGISTER NOW - LIMITED SPOTS!
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-navy py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <p class="text-gray-400">
+                © 2024 Virtual Flip Formula. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown timer
+        function updateCountdown() {
+            // Set your webinar date here
+            const webinarDate = new Date('2024-12-31T20:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = webinarDate - now;
+
+            if (distance > 0) {
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Update the countdown display
+                const countdownElements = document.querySelectorAll('.countdown-timer .text-3xl');
+                if (countdownElements.length >= 4) {
+                    countdownElements[0].textContent = hours.toString().padStart(2, '0');
+                    countdownElements[1].textContent = minutes.toString().padStart(2, '0');
+                    countdownElements[2].textContent = seconds.toString().padStart(2, '0');
+                    countdownElements[3].textContent = '00';
+                }
+            }
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+    </script>
+</body>
+</html> 
