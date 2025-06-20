@@ -73,12 +73,12 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center">
                 <div class="flex items-center">
-                    <a href="index.html" class="flex items-center">
+                    <a href="https://virtualflipformula.io/" class="flex items-center">
                         <img src="assets/logos/vff_logo.png" alt="Virtual Flip Formula" class="h-8">
                     </a>
                 </div>
                 <div class="flex items-center space-x-6">
-                    <a href="../index.html" class="text-white hover:text-brand-green transition-colors">
+                    <a href="https://virtualflipformula.io/" class="text-white hover:text-brand-green transition-colors">
                         Back to Home
                     </a>
                 </div>
